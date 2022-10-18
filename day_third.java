@@ -86,7 +86,15 @@ public class day_third {
     else{
         System.out.println("print c: "+ c);
     }
-     
+
+    //ques 6: whether the student is pass or fail
+    int marks=input.nextInt();
+    if (marks>=33){
+        System.out.println("pass");
+    }
+    else{
+        System.out.println("fail");
+    }
 
 }
 }
