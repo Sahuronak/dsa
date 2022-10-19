@@ -62,6 +62,27 @@ public class day_second {
         System.out.println(v--);
         System.out.println(w--);    //post decrement-value change then value use.
         
+        //relational operator
+        System.out.println(v==w);
+        System.out.println(v!=w);
+        System.out.println(v>w);
+        System.out.println(v<w);
+        System.out.println(v>=w);
+        System.out.println(v<=w);
+       
+        // assignment operator
+        v+=w;
+        System.out.println(v);
+        v-=w;
+        System.out.println(v);
+        v*=w;
+        System.out.println(v);
+        v/=w;
+        System.out.println(v);
+        // bitwise operator: these are also exit in the  operator.
+
+
+
 
 
 
