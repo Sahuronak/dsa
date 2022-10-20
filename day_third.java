@@ -92,5 +92,7 @@ public class day_third {
     int marks=input.nextInt();
     String reportcard =(marks>=33)?"pass":"fail";
     System.out.println(reportcard);
+    
+    }
 }
-}
+
