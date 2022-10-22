@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 import javax.sound.sampled.SourceDataLine;
-public class day_fifth {
+public class fifth_method {
     // funtions and method
     /*function :its a block of code which perform some work we can call fi=unction to execute the work
      * method : function which are written under the  classes to execute some of the work is called methods
@@ -51,10 +51,12 @@ public class day_fifth {
     
     public static int binomial(int n , int r){
         System.out.println("enter binomial number6");
-        int bino = (n-1);
-        int rio =(r-1);
-        int binomial  = bino/r*(bino-rio);
-            return binomial;
+        int fact_n = factorial(n);
+        int fact_r =factorial(r);
+        int fact_nmr  = factorial(n-r);
+
+        int bin_coeff = fact_n/(fact_r * fact_nmr);
+            return bin_coeff;
     }
         
     
