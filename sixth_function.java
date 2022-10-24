@@ -56,6 +56,8 @@ public class sixth_function {
         public static float sum1(float a , float b, float c){
         return a+b+c;
         }
+        //convert from binary to decimal
+        //binary number sestem-bitwise operator{0,1}    
 
 
         //binary to decimal
@@ -87,8 +89,7 @@ public class sixth_function {
 
 
         }
-    //convert from binary to decimal
-//binary number sestem-bitwise operator{0,1}
+    
 
 
 
