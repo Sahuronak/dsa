@@ -1,6 +1,4 @@
 import java.util.Scanner;
-
-import javax.sound.sampled.SourceDataLine;
 public class fifth_method {
     // funtions and method
     /*function :its a block of code which perform some work we can call fi=unction to execute the work
@@ -61,32 +59,33 @@ public class fifth_method {
         
     
     public static void main (String args[]){
-        Scanner input= new Scanner(System.in);
-        System.out.println("product of two number are:");
-        int a =input.nextInt();
-        int b=input.nextInt();
-        int cal=product(a, b);
-        System.out.println(cal);
+        try (Scanner input = new Scanner(System.in)) {
+            System.out.println("product of two number are:");
+            int a =input.nextInt();
+            int b=input.nextInt();
+            int cal=product(a, b);
+            System.out.println(cal);
 
-        System.out.println("factorial of number is:");
-        int d = input.nextInt();
-        int fac =factorial(d);
-        System.out.println(fac);
+            System.out.println("factorial of number is:");
+            int d = input.nextInt();
+            int fac =factorial(d);
+            System.out.println(fac);
 
-        
-        System.out.println("enter number1");
-        int number1 = input.nextInt();
-        System.out.println("enter number2");
-        int number2 = input.nextInt();
-        System.out.println("enter operation");
-        char operation = input.next().charAt(0);
-        int calci= calculator(number1, number2, operation) ;
-        System.out.println(calci);
-        
-        int n = input.nextInt();
-        int r = input.nextInt();
-        int bino = binomial(n, r);
-        System.out.println(bino);
+            
+            System.out.println("enter number1");
+            int number1 = input.nextInt();
+            System.out.println("enter number2");
+            int number2 = input.nextInt();
+            System.out.println("enter operation");
+            char operation = input.next().charAt(0);
+            int calci= calculator(number1, number2, operation) ;
+            System.out.println(calci);
+            
+            int n = input.nextInt();
+            int r = input.nextInt();
+            int bino = binomial(n, r);
+            System.out.println(bino);
+        }
 
                
         

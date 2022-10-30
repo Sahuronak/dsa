@@ -58,8 +58,6 @@ public class sixth_function {
         }
         //convert from binary to decimal
         //binary number sestem-bitwise operator{0,1}    
-
-
         //binary to decimal
          public static void binToDecimal(int binNumber){
         int pow = 0;
@@ -67,7 +65,6 @@ public class sixth_function {
         while(binNumber>0){
             int lastdigit = binNumber % 10;
             dec = dec +(lastdigit * (int)Math.pow(2, binNumber) );
-            pow ++;
             binNumber=binNumber/10;
         }
         System.out.println("decimal of "+ binNumber + " ="+dec );

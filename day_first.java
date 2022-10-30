@@ -34,37 +34,38 @@ public class day_first{
         System.out.println(divide);
 
 
-        // taking in from user using scanner class
-        Scanner input= new Scanner(System.in);
-         int e= input.nextInt();
-         System.out.println(e);
-         byte f = input.nextByte();
-         System.out.println(f);
-         short g = input.nextShort();
-         System.out.println(g);
-         System.out.println("print string");
-         String h = input.next();
-         System.out.println(h);
-         double i = input.nextDouble();
-         System.out.println(i);
-         long j = input.nextLong();
-         System.out.println(j);
-          
-         // sum of two number by taking input from user:
-         int num1 = input.nextInt();
-         int num2 = input.nextInt();
-        int add = num1+ num2;
-        System.out.println(add);
+        try (// taking in from user using scanner class
+        Scanner input = new Scanner(System.in)) {
+            int e= input.nextInt();
+             System.out.println(e);
+             byte f = input.nextByte();
+             System.out.println(f);
+             short g = input.nextShort();
+             System.out.println(g);
+             System.out.println("print string");
+             String h = input.next();
+             System.out.println(h);
+             double i = input.nextDouble();
+             System.out.println(i);
+             long j = input.nextLong();
+             System.out.println(j);
+              
+             // sum of two number by taking input from user:
+             int num1 = input.nextInt();
+             int num2 = input.nextInt();
+            int add = num1+ num2;
+            System.out.println(add);
 
-        // area of cicle
-        float radius = input.nextFloat();
-        float area = 3.14f* (radius)*(radius);
-        System.out.println(area);
+            // area of cicle
+            float radius = input.nextFloat();
+            float area = 3.14f* (radius)*(radius);
+            System.out.println(area);
 
-        // area of square:
-        double sides =  input.nextDouble();
-        double area_square = sides* sides;
-        System.out.println(area_square);
+            // area of square:
+            double sides =  input.nextDouble();
+            double area_square = sides* sides;
+            System.out.println(area_square);
+        }
 
 
 

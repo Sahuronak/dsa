@@ -1,5 +1,3 @@
-import java.net.SocketTimeoutException;
-
 public class day_second {
     public static void main(String args[]){
         // typecasting : forcefully conversion of one datatype to another is called typecasting

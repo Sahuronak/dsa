@@ -43,10 +43,6 @@ public class eighth_array {
         
         }
 
-
-        
-    
-    
     // array operation
     public static void arrayOperation(int marks[]){
         for (int i = 0; i<marks.length; i++){

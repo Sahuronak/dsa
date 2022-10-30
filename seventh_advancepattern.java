@@ -1,5 +1,3 @@
-import java.util.function.DoubleToIntFunction;
-
 public class seventh_advancepattern {
     // advance pattern of java
     public static void main(String args[]) {
