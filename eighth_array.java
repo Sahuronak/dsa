@@ -1,3 +1,6 @@
+import java.util.concurrent.ConcurrentHashMap;
+
+import javax.sound.sampled.SourceDataLine;
 
 public class eighth_array {
     public static void main(String args[]){
@@ -20,7 +23,7 @@ public class eighth_array {
             System.out.println("NOT FOUND");
         }
         else{
-            System.out.println("key is at index"+ index);
+            System.out.println("key is at index: "+ index);
         }
         // //linear: string
         // String stringlist[] = {"munch", "kit-kat", "dailymilk","five-star"};
@@ -29,7 +32,7 @@ public class eighth_array {
     //binary Search :with the time complexity O(log n)
             System.out.println("binary search");
                     int[] num1={3 ,6 ,9 ,12 ,15 ,18 ,21};
-                    System.out.println("index for key  is: "+binarySearch(num1, 12));
+                    System.out.println("index for key  is : "+binarySearch(num1, 12));
 
      //reverse number 
      System.out.println("reverse array");
@@ -37,9 +40,21 @@ public class eighth_array {
         reverseArray(num2);
         //print 
         for (int i=0; i<num2.length; i++){
-            System.out.println(num2[i]+" ");
+            System.out.print(num2[i]+" ");
         }
         System.out.println();
+        
+        //print Pairs in an array
+        System.out.println("print pair in an arrays");
+        int num3[]={1,2,3,4,5,6,7};
+        PrintPairs(num3);
+
+        //printing subarray :kidanas algo
+        System.out.println("subarray by kindanas by time complexity: O(n)");
+        int num4[]={9,8,7,6,5,4,3};
+        kadanasSubarray(num4);
+
+
         
         }
 
@@ -100,8 +115,37 @@ public class eighth_array {
             last--;
         }
     }
-    
-    
+    //pairs in an array
+    public static void PrintPairs(int num3[]){
+        int tp=0;
+        //outer loop
+        for(int i=0; i<num3.length; i++){
+            int current = num3[i];
+       
+        //current loop
+        for(int j=0; j<num3.length; j++){
+            System.out.println("pair os number i,j are ("+current+","+num3[j]+")");
+            tp++;
+        }
+        System.out.println();
+        
+    }
+    System.out.println("total pairs are: "+tp);
+}
+//printing subarray: continous part of array
+// by kidanes algorithm:
+public static void kadanasSubarray(int num4[]){
+    int MaxSub =Integer.MIN_VALUE;
+    int currSub = 0;
+    for (int i=0; i<num4.length; i++){
+        currSub = currSub + num4[i];
+        if (currSub<0){
+            currSub=0;
+        }
+        MaxSub=Math.max(currSub,MaxSub);
+    }
+    System.out.println("our maximum subarray sum is : "+MaxSub);
+}
 }
 
     
