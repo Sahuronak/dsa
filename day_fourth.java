@@ -31,6 +31,31 @@ public static void main(String args[]){
             System.out.println("you have not put valid input");
 
         }
+        //Write a Java program to input week number(1-7) and print day of week name using switch case
+        System.out.println("input the day number");
+        int day = input.nextInt();
+        switch(day){
+            case(1):
+            System.out.println("Monday");
+            break;
+            case(2):
+            System.out.println("tuesday");
+            break;
+            case(3):
+            System.out.println("wednesday");
+            break;
+            case(4):
+            System.out.println("thursday");
+            break;
+            case(5):
+            System.out.println("friday");
+            break;
+            case(6):
+            System.out.println("saturday");
+            break;
+            default:
+            System.out.println("this is not");
+        }
         /*loops : these are the statements through which we can put our work on repeat
         //there are three type of loop 1.> while loop 2.> for loop 3.> do while loop
         //while loop
@@ -63,10 +88,10 @@ public static void main(String args[]){
         }
         //print star pattern
        /**
-         * * 
+         * *
          * * *
-         * * * * 
-        */  
+         * * * *
+        */
         for(int line =1; line<=5; line++){
             for(int star =1; star<=line; star++ ){
                 System.out.print("*");
@@ -79,7 +104,7 @@ public static void main(String args[]){
         // * * *
         // * *
         // *
-       
+
         for(int  line =1; line <=4; line++){
             for (int star = 1; star<=(4-line+1); star++){
                 System.out.print("*");

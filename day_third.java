@@ -1,4 +1,6 @@
-import java.util.Scanner; 
+import java.util.Scanner;
+
+import javax.lang.model.element.ElementVisitor; 
 public class day_third {
     public static void main (String args[]){
 
@@ -6,7 +8,6 @@ public class day_third {
         //ques:1- elegible for vote and driving after 18 using if -else:
         System.out.println("tell me your age");
         int age = input.nextInt();
-            
         if(age>=18){
             System.out.println("hey \n you are above 18 \n eligible for vote and driving");
         }
@@ -24,19 +25,28 @@ public class day_third {
         else{
             System.out.println("num2 is greater than num1");
         }
+        //ques1: write a java program to get number from the user and print whether it is positive or negative
+        System.out.println(" whether the number is positive or negative");
+        int n=input.nextInt();
+        if(n<0){
+        System.out.println("negative");
+
+        }
+         else{
+        System.out.println("positive");
+         }
 
         // ques 3: print if the number is odd or even
         System.out.println("your number for odd or even for");
         int number= input.nextInt();
-        
-        if(number%2==0){
+               if(number%2==0){
             System.out.println("this is a even number");
         }
         else{
             System.out.println(" this is odd number");
         }
         //syntax of else if statement:
-        // if(consition){
+        // if(condition){
         //     //code
         // }
         // else if(condition){
@@ -80,20 +90,30 @@ public class day_third {
         int marks=input.nextInt();
         String reportcard =(marks>=33)?"pass":"fail";
         System.out.println(reportcard);
-    }
 
-    
+
+        //ques 7: Finish the following code so that it prints You have a fever if your temperature is above 100 and otherwise prints You don't have a fever
+        System.out.println(" here is the fever temperature");
+        double temp = 103.5;
+        if(temp>100){
+            System.out.println("suffering from fever ");
+        }else{
+            System.out.println(" I don't  have fever");
+        }
+        }
+        }
+
+
     // // condition statement
     // //1. if else
-    // //2. else if 
+    // //2. else if
     // //3.switch
-    
-    // //syntex of if-else condition
+
+    // //syntax of if-else condition
     // if (condition){
     //     //code
     // }
-
-    
     }
-}
+
+
 

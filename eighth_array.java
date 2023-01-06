@@ -1,6 +1,4 @@
-import java.util.concurrent.ConcurrentHashMap;
 
-import javax.sound.sampled.SourceDataLine;
 
 public class eighth_array {
     public static void main(String args[]){

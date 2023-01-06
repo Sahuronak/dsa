@@ -1,4 +1,4 @@
-import java.util.Scanner;
+
 public class sixth_function {
     public static void main (String args[]){
         // whether the number isprime or not 
@@ -60,7 +60,6 @@ public class sixth_function {
         //binary number sestem-bitwise operator{0,1}    
         //binary to decimal
          public static void binToDecimal(int binNumber){
-        int pow = 0;
         int dec = 0;
         while(binNumber>0){
             int lastdigit = binNumber % 10;
@@ -72,12 +71,10 @@ public class sixth_function {
 
         //decimal to binary
         public static void  decToBin(int decNumber){
-            int pow = 0;
             int bin = 0;
             while(decNumber>0){
                 int rem = decNumber % 2;
                 bin = bin +(bin * (rem *(int)Math.pow(10, bin)));
-                pow ++;
                 decNumber=decNumber/2;
             }
             System.out.println("binary form " + decNumber+"="+ bin);

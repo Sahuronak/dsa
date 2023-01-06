@@ -79,13 +79,26 @@ public class day_second {
         System.out.println(v);
         // bitwise operator: these are also exit in the  operator.
 
+        //que1: in a program input 3 number : A,B and C ypu have to output the average these 3 number 
+        int m= 34;
+        int p = 45;
+        int c = 99;
+        int avg= (m+p+c)/3;
+        System.out.println("average:"+avg);
+
+        //ques2: in program ,input the side of square you have to output the area of the square 
+         int side= 5;
+         int area= side*side;
+         System.out.println("area:"+area);
+
+         //ques3: enter cost of 3 iteam from the user  in a float a pencil, a pen ,ans an eraser. you have to output the total cost of the iteam back to the user as the bill.
+         float pen =5.0f;
+         float pencil=4.0f;
+         float eraser = 6.0f;
+         int sumation = (int)(pen + pencil + eraser);
+         System.out.println("sum of stationary:"+sumation);
 
 
-
-
-
-
-        
 
     }
 }
