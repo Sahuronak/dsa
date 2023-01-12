@@ -1,5 +1,6 @@
-public class day_second {
+public class operators {
     public static void main(String args[]){
+        // typecasting : forcefully conversion of one datatype to another is called typecasting
         // typecasting : forcefully conversion of one datatype to another is called typecasting
         System.out.println("sum of int and float integer");
         float a = 10.56f;

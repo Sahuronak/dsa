@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class fifth_method {
+public class function {
     // funtions and method
     /*function :its a block of code which perform some work we can call fi=unction to execute the work
      * method : function which are written under the  classes to execute some of the work is called methods

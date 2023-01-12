@@ -1,9 +1,10 @@
 import java.util.Scanner;
-public class day_fourth {
+public class loops {
 public static void main(String args[]){
     
-    try (// form a calculator using switch case
-    Scanner input = new Scanner(System.in)) {
+    // form a calculator using switch case
+    Scanner input = new Scanner(System.in); {
+        System.out.println("this is calculator");
         System.out.println("enter number1");
         int number1 = input.nextInt();
         System.out.println("enter number2");
@@ -63,12 +64,14 @@ public static void main(String args[]){
             //code
         }*/
         //1. print value of 10 times:
+        System.out.println("print the value ten times");
         int value1=input.nextInt();
         while(value1<=100){
             System.out.println("hello , everyone");
             value1++;
         }
         //print number from 1 to n
+        System.out.println("print the number from 1 to n :");
         int n = input.nextInt();
         while(n<=100){
             System.out.println(n);
@@ -79,13 +82,35 @@ public static void main(String args[]){
             System.out.println(i);
             i++;
         }
-    }
-    for( int i=1; i<=4; i++){
+      }
+        for( int i=1; i<=4; i++){
             for( int j=1; j<=5; j++){
                 System.out.print("* ");
             }
             System.out.println();
         }
+        // sum of first n natural number
+        System.out.println("THE sum of n natural number are:");
+            int number1= input.nextInt();
+            int sum = 0;
+            int i=1;
+            while(i<=number1){
+                sum+=i;
+                i++;
+            }
+            System.out.println("the sum of n number is: "+sum);
+
+        // print the reverse of number 
+        System.out.println("enter the number for the reverse print :");
+        int rev1 = input.nextInt();
+        while(rev1>0){
+            int lastDigit= rev1%10;
+            System.out.println(lastDigit);
+            rev1 =rev1/10;
+        }
+        System.out.println("rev1:"+rev1);
+
+        System.out.println(" this is the star pattern :");
         //print star pattern
        /**
          * *

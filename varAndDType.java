@@ -1,7 +1,24 @@
 import java.util.Scanner;
-public class day_first{
-    public static void main(String args[]){
-        // variable in java
+public class varAndDType{
+    public static void main(String[] args){
+    //java is an objective oriented programming language developed by sum microsystem of USA in 1991
+    //it was originally called Oak by james gasline(he is the one of inventer of java )
+    //Java - it is a purely objective oriented programming
+              
+       System.out.println("here is java 2 folder for practice");
+     // type of data type :
+    //1.primitive data type                 2. non- primitive data type
+    int num12 = 78;
+    int num24= 45;
+    System.out.println(num12+num24 );
+    //application of java
+    //1. mobile application - for mobile
+    //2. desktop GUI application
+     //3. web based application
+     //4. interprise application -run time enviroment
+    //5. scientific application - mathamatical application and scientific application 
+    //6. gaming application - perform games 
+    // variable in java
         int a=10;
         int b=20;
         int sum= a+b;
@@ -34,8 +51,8 @@ public class day_first{
         System.out.println(divide);
 
 
-        try (// taking in from user using scanner class
-        Scanner input = new Scanner(System.in)) {
+        // taking in from user using scanner class
+        Scanner input = new Scanner(System.in); {
             int e= input.nextInt();
              System.out.println(e);
              byte f = input.nextByte();
@@ -56,7 +73,7 @@ public class day_first{
             int add = num1+ num2;
             System.out.println(add);
 
-            // area of cicle
+            // area of circle
             float radius = input.nextFloat();
             float area = 3.14f* (radius)*(radius);
             System.out.println(area);
@@ -65,10 +82,16 @@ public class day_first{
             double sides =  input.nextDouble();
             double area_square = sides* sides;
             System.out.println(area_square);
+
+            // factorial of the number
+            System.out.println("enter the number");
+            int n = input.nextInt();
+            long factorial = 1;
+            int z = 1;
+            for(i=1; i<=n; i++){
+               factorial*=i;
+            }
+            System.out.printf("factorial of %d = %d",n ,factorial);
+            }
         }
-
-
-
-
     }
-}
