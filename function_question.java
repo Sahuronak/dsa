@@ -3,15 +3,36 @@ public class function_question{
     public static void main(String[] args) {
 
  Scanner  input = new Scanner(System.in);
- System.out.println("product of two number");
-    int s=input.nextInt();
-    int t=input.nextInt();
-    int pro=product(s, t);
+    System.out.println("sum of digit is ");
+        int sumDigit= input.nextInt();
+        System.out.println("the sum of digit : "+ sumDigit(sumDigit));
+
+    System.out.println("is the number is palindrone");
+        int palinNum= input.nextInt();
+        if(isPalindrone(palinNum)){
+            System.out.println("thsis is palindrone");
+        }else{
+            System.out.println("this is not the palindrone");
+        }
+
+    System.out.println("Number is even or not");
+        int numEven=input.nextInt();
+        if(isEven(numEven)){
+          System.out.println("this is even number");
+        }else{
+          System.out.println("this is odd number");
+     }
+
+
+    System.out.println("product of two number");
+        int s=input.nextInt();
+        int t=input.nextInt();
+        int pro=product(s, t);
     System.out.println(pro);
 
     System.out.println("the factorial of number is :");
-    int fact_num=input.nextInt();
-    System.out.println(factorial(fact_num));
+        int fact_num=input.nextInt();
+        System.out.println(factorial(fact_num));
 
     System.out.println("the binomial cofficient of the given number is :");
         int n_num=input.nextInt();
@@ -20,7 +41,7 @@ public class function_question{
 
     System.out.println("prime or not");
         int isnum= input.nextInt();
-     System.out.println((isprime(isnum)));
+        System.out.println((isprime(isnum)));
 
     System.out.println("prime number in range: ");
        int is_num= input.nextInt();
@@ -35,22 +56,22 @@ public class function_question{
         System.out.println(avg);
 
     System.out.println("the odd number are");
-    int n = input.nextInt();
-    int odd= odd_number(n);
+        int n = input.nextInt();
+        int odd= odd_number(n);
     System.out.println(odd);
 
     System.out.println("the greater number is");
-    int x = input.nextInt();
-    int y= input.nextInt();
+        int x = input.nextInt();
+        int y= input.nextInt();
     great_number(x, y); 
 
     System.out.println("the circumference of circle");
-    int radius= input.nextInt();
-    int circumference = circle(radius);
+        int radius= input.nextInt();
+        int circumference = circle(radius);
     System.out.println(circumference);
 
     System.out.println("the entry of party is: ");
-    int age = input.nextInt();
+        int age = input.nextInt();
     System.out.println(party(age));
     }
 
@@ -94,7 +115,7 @@ public class function_question{
         System.out.println();
      }
 
-    //enter 3 number from the user and make a funtion to print their average?
+    //enter 3 number from the user and make a function to print their average?
     public static int aveg(int a, int b, int c){
         int average= (a+b+c)/3;
         return average;
@@ -106,7 +127,7 @@ public class function_question{
         for (int i=1; i<=n;i++){
             if(i%2!=0){
              sum +=i;
-                System.out.println("the sum:"+sum);
+                System.out.println("the sum: "+sum);
             }
         }
       return sum;
@@ -141,6 +162,37 @@ public class function_question{
         return age;
 
     }
-    // two no. are entered by the user x and n ,write a function to find the value of onr number raised to the power of another e^x
+        //write a method name isEven that accept an int argument , the method should return true if the argument is even or false otherwise. also write the program to test your method
+         public static boolean isEven(int evennum){
+        if(evennum %2==0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+        //write the java program to check wheather the number is palindrome in java
+        public static boolean isPalindrone(int palinNum){
+        int  palindrome=palinNum;
+        int reverse =0;
+        while(palindrome !=0){
+            int remainder =palindrome%10;
+            reverse= reverse * 10+ remainder;
+            palindrome = palindrome/10;
+        }
+        if(palinNum==reverse){
+            return true;
+        }
+        return false;
+    }
+    //write a java to the compute the sum of the digit in a integers
+    public static int sumDigit(int sumDigit){
+        int sumOfDigit =0;
+        while(sumDigit>0){
+            int lastdigit =sumDigit%10;
+            sumOfDigit+=lastdigit;
+            sumDigit/=10;
+        }
+        return sumOfDigit;
+    }
 
 }
