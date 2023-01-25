@@ -8,10 +8,6 @@ public class pattern_question {
          * * * * *
          * * * * *
          */
-        
-        int a = 4;
-        int b = 5;
-
         for( int i=1; i<=4; i++){
             for( int j=1; j<=5; j++){
                 System.out.print("* ");
@@ -47,9 +43,8 @@ public class pattern_question {
           * * *
           * * * *
           */
-          int e = 4;
           //outer loop
-          for (int i = 1; i<=e; i++){
+          for (int i = 1; i<=4; i++){
             //inner loop
             for( int j=1; j<=i; j++){
                 System.out.print("*");
@@ -63,7 +58,6 @@ public class pattern_question {
            * *
            * 
            */
-          int f= 4;
           //outer loop
           for( int i=4; i<=1; i--){
             //inner loop
@@ -81,7 +75,7 @@ public class pattern_question {
             * * *
           * * * *    
            */
-          int g= 4;
+          int g=4;
           for( int i= 1; i<=4; i++){
             //inner loop for space
             for( int j=1; j<=g-1; j++){
@@ -102,8 +96,6 @@ public class pattern_question {
            1 2 3 4
            1 2 3 4 5
            */
-          int h = 5;
-        
           for(int i =1; i<=5; i++){
             //inner loop
             for (int j = 1; j<=i; j++){
@@ -125,7 +117,6 @@ public class pattern_question {
             //inner loop
             for(int j= 1; j<=k-i+1; j++){
                 System.out.print(j+" ");
-            
             }
             System.out.println();
           }
@@ -168,6 +159,23 @@ public class pattern_question {
                 else{
                   System.out.print("0 ");
                 }
+              }
+              System.out.println();
+            }
+            System.out.println("the value of alphabates in the half pyramid");
+            /*a
+              b c
+              d e f
+              g h i j
+              k l m n o
+             */
+            //outer loop
+            char ch ='A';
+            for(int i = 1; i<=5; i++){
+              //inner loop
+              for(int j =1; j<=i; j++){
+                System.out.print(ch);
+                ch++;
               }
               System.out.println();
             }

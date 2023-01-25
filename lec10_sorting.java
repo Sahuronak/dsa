@@ -2,9 +2,7 @@ public class lec10_sorting {
     //bubble :large element come to the end of array by swapping with adjcent elements.
      public static void main(String args[]) {
         int arr[] = {4,6,7,3,2,1};
-        System.out.print(bubbleSort(arr)); 
-
-        
+        System.out.print(bubbleSort(arr));
      }
      public static boolean bubbleSort(int arr[]){
         //outer loop

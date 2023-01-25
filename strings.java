@@ -1,45 +1,45 @@
-import java.util.Scanner;
+import java.util.*;
 
 import javax.print.DocFlavor.STRING;
-import javax.xml.transform.Source;
-
-import java.util.Scanner;
 public class strings {
     public static void main (String args[]){
-        // Scanner sc = new Scanner(System.in);
-        // String name = "sakshi";
-        // String fullname="sakshi sahu";
-        // String names = sc.nextLine();
-        // System.out.println("your name is "+ name);
-        // System.out.println(fullname);
-        // System.out.println(fullname.length());
-        // // length of string
-        // System.out.println(names.length());
-        // // charat
-        // for(int i=0; i<fullname.length(); i++){
-        //     System.out.println(fullname.charAt(i));
+        Scanner sc = new Scanner(System.in);
 
-        // }
+        String str = sc.nextLine();
+        System.out.println(palindrome(str));
+        String name = "sakshi";
+        String fullname="sakshi sahu";
+        String names = sc.nextLine();
+        System.out.println("your name is "+ name);
+        System.out.println(fullname);
+        System.out.println(fullname.length());
+        // length of string
+        System.out.println(names.length());
+        // character
+        for(int i=0; i<fullname.length(); i++){
+            System.out.println(fullname.charAt(i));
+
+        }
         String name1 = "sakshi";
         String name2 = "sakshi";
-        //s1>s2 : +ve value
-        //s1 == s2 :0
-        //s1<s2 :-ve value
-        // if(name1.compareTo(name2)==0){
-        //     System.out.println("string are equal");
+        // s1>s2 : +ve value
+        // s1 == s2 :0
+        // s1<s2 :-ve value
+        if(name1.compareTo(name2)==0){
+            System.out.println("string are equal");
 
-        // }else{
-        //     System.out.println("strings are not equal");
-        // }
-        // if(new String("sakshi")== new String("Sakshi")){
-        //     System.out.println("strings are equals");
+        }else{
+            System.out.println("strings are not equal");
+        }
+        if(new String("sakshi")== new String("Sakshi")){
+            System.out.println("strings are equals");
 
-        // }else{
-        // System.out.println("strings are not equals");
-        // }
-        // String sentences = "MY NAME IS SAKSHI";
-        // String name = sentences.substring(4, sentences.length());
-        // System.out.println(name);
+        }else{
+        System.out.println("strings are not equals");
+        }
+        String sentences = "MY NAME IS SAKSHI";
+        String nam= sentences.substring(4, sentences.length());
+        System.out.println(nam);
         StringBuilder sb = new StringBuilder("sak");
 
         // char at index 0
@@ -79,9 +79,48 @@ public class strings {
             sb.setCharAt(back, frontchar);
 
         }
+    
         System.out.println(sb);
-
-
-
+        String path = "W N E E N E S E N N N";
+        System.out.println("THE SHORTEST PATH IS: "+ getShortPath(path));
     }
+        // print a palindrome
+     public static boolean palindrome(String str){
+            for(int i=0; i<str.length()/2; i++){
+                int n= str.length();
+                if(str.charAt(i)!=str.charAt(n-1-i)){
+                    // not a palindrome
+                    return false;
+                }
+            }
+        return true;
+    }
+    //DIRECTION OF THE ROUTE FOR THE DISPLACEMENT 
+    public static float getShortPath(String path){
+        float x=0,y=0;
+        for(int i=0; i<=path.length(); i++){
+            char direction = path.charAt(i);
+            //south
+            if(direction=='S'){
+                y--;
+            }
+            //north
+            else if(direction=='N'){
+                y++;
+            }
+            //west
+            else if(direction=='W'){
+                x--;
+            }
+            //east
+            else {
+                y++;
+            }
+            float X2= x*x;
+            float Y2 =y*y;
+
+        }
+        return (float)Math.sqrt(X2+Y2);
+    }
+
 }

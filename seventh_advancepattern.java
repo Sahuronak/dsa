@@ -1,6 +1,11 @@
 public class seventh_advancepattern {
     // advance pattern of java
     public static void main(String args[]) {
+        
+        System.out.println("this is the number pyramid");
+        numberPyramid(5);
+        System.out.println("thsi is butterfly pattern");
+        butterflyPattern(5);
         System.out.println("this is hollowrectangle");
         hollowRectangle(5, 7);
         System.out.println("this is inverted rotated half pramid");
@@ -18,6 +23,76 @@ public class seventh_advancepattern {
         System.out.println("this is a diamond");
         diamond(5);
         
+    }
+    public static void numberPyramid(int p){
+        //outer loop
+        for(int i = 1; i<=p; i++){
+            //inner loop
+            //space
+            for(int j=1; j<=p-i; j++){
+                System.out.print(" ");
+            }
+            //descending loop
+            for(int j=i; j>=1; j--){
+                System.out.print(j);
+            }
+            //ascending loop
+            for(int j=2; j<=i; j++){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+    public static void  palindronicNumber(int numbers){
+        //outer loop
+        for(int i = 1; i<=numbers; i++){
+            //inner loop
+         //space
+         for(int j=1; j<=numbers-i; j++){
+            System.out.print(" ");
+         }
+         //number
+         for(int j =i; j>=1; j++){
+            System.out.print(i);
+         }
+         System.out.println();
+        }
+    }
+    public static void butterflyPattern(int star){
+        //outer loop:1
+        for (int i = 1; i<=star; i++){
+            //inner loop
+            //stars
+            for(int j=1; j<=i; j++){
+                System.out.print("*");
+            } 
+            //spaces
+            for(int j=1; j<=2*(star-i); j++){
+                System.out.print(" ");
+            }
+            //STARS
+            for(int j=1; j<=i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        //outer
+        for (int i = star; i>=1; i--){
+            //inner loop
+            //stars
+            for(int j=1; j<=i; j++){
+                System.out.print("*");
+            } 
+            //spaces
+            for(int j=1; j<=2*(star-i); j++){
+                System.out.print(" ");
+            }
+            //STARS
+            for(int j=1; j<=i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
     public static void hollowRectangle( int row , int col){
         //outer loop-rows
@@ -70,8 +145,7 @@ public class seventh_advancepattern {
         counter++;
         }
         System.out.println();
-      }  
-       
+      }
     }
     public static void zeroOneTriangle(int n) {
         //outer loop
@@ -86,7 +160,7 @@ public class seventh_advancepattern {
             }
             System.out.println();
         }
-        
+
     }
     public static void solidRhombus(int n){
         //outer loop 
@@ -110,7 +184,7 @@ public class seventh_advancepattern {
             for(int j=1; j<=n-i; j++ ){
                 System.out.print(" ");
             }
-            //for starsand there boundary
+            //for stars and there boundary
             for(int j=1; j<=n; j++){
                 if (i==1 || i==n || j==1 || j==n){
                     System.out.print("*");
@@ -134,6 +208,5 @@ public class seventh_advancepattern {
             }
             System.out.println();
         }
-        
-    } 
+    }
 }

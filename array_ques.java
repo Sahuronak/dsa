@@ -1,15 +1,14 @@
 public class array_ques {
-    public static void main(String[] args){
- // problem :1  create an array of 5 float and calculate their sum
-         
+    public static void main(String[] args, int i){
+ // create an array of 5 float and calculate their sum
+
         float [] marks = {56.9f ,76.5f ,87.6f ,65.7f};
         float sum = 0;
         for(float  element:marks){
             sum = sum + element;
-        
         }
         System.out.println("the value of sum is:  "+ sum);
-        
+
         // write a program to find out whether a given integers is present in an array or not .
         int  [] number = {56 ,76 ,88 ,65};
         float num = 76;
@@ -19,7 +18,6 @@ public class array_ques {
                 isInArray = true;
                 break;
             }
-        
         }
         if(isInArray){
             System.out.println("the value is present in the array");
@@ -41,69 +39,70 @@ public class array_ques {
         int [][] mat2 = {{22 ,33, 44},{99, 88, 77}};
         int [][] result = {{0, 0, 0},{0, 0, 0}};
 
-        for(int i=0; i<mat1.length; i++){//row number of times
+        for(int m=0; m<mat1.length; m++){//row number of times
             for(int j=0; j<mat1[i].length; j++){//column number of times
-                System.out.print(result[i][j] );
+                System.out.print(result[m][j] );
 
-                result[i][j]= mat1[i][j] + mat2[i][j];
+                result[m][j]= mat1[m][j] + mat2[m][j];
             }
             System.out.println(" ");
         } 
         //5- to reverse an array with the help of java program:
-    //     int[] arr = {1,2,3,4,5,6,7,8};
-    //     int l = arr.length;
+        int[] arr = {1,2,3,4,5,6,7,8};
+        int l = arr.length;
         
-    //     int n = Math.floorDiv(l, 2);
-    //     int tem;
-    //     for(int i=0; i<n; i++){
-    //         //swap a[i] and a[l-1-i]
-    //         //a b temp
-    //         tem = arr[i];
-    //         arr[i] = arr[l-1-i];
-    //         arr[l-1-i]= tem;
-    //     }
-    //    for(int element:arr){
-    //     System.out.println(element);
+        int n = Math.floorDiv(l, 2);
+        int tem;
+        for(int k=0; k<n; k++){
+            //swap a[i] and a[l-1-i]
+            //a b temp
+            tem = arr[k];
+            arr[k] = arr[l-1-k];
+            arr[l-1-k]= tem;
+        }
+       for(int element:arr){
+        System.out.println(element);
 
        
       // }
        //ques-6 write a java program to find the maximum element in the array.
-    //         int [] arr = {1,3,4,5,6,8,7,9};
-    //         int max =0;
-    //         for(int e:arr){
-    //             if(e>max){
-    //                 max =e;
-    //             }
-    //         }
-    //         System.out.println("the value of maximum in array is: "+ max);
-    // }
-    //     int[] arr = {645,643,656,243,543};
-    //     int min = (Integer.MAX_VALUE);
-    // for(int e:arr){
-    //     if(e<min){
-    //         min =e;
-            
-    //     }
-    // }
-    // System.out.println("the minimum value in array is: "+ min);
-    // }
-        //que-7 - write a java program to find  whether an array is sorted or not
+            int [] array = {1,3,4,5,6,8,7,9};
+            int max =0;
+            for(int e:arr){
+                if(e>max){
+                    max =e;
+                }
+            }
+            System.out.println("the value of maximum in array is: "+ max);
+    }
+        int[] array = {645,643,656,243,543};
+        int min = (Integer.MAX_VALUE);
+    for(int e:arr){
+        if(e<min){
+            min =e;
+        }
+    }
+    System.out.println("the minimum value in array is: "+ min);
+    }
+    
+    //que-7 - write a java program to find  whether an array is sorted or not
     boolean isSorted = true;
-    int[] a = {43,98,65,76,87,99};
-    for(int i =0; i<a.length-1; i++){
+    int a[] = {43,98,65,76,87,99};
+    for(int  i =0; i<=a.length-1; i++){
         if(a[i]> a[i+1]){
         isSorted = false;
         break;
         }
-       
-    }
     if(isSorted){
         System.out.println("the array is sorted " );
 
     }
     else{
         System.out.println("the array is not sorted");
+
+   
     }
-    }  
-    
+
+    // value fill in the reverse order
+
 }

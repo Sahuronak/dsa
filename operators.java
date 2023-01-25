@@ -98,8 +98,42 @@ public class operators {
          float eraser = 6.0f;
          int sumation = (int)(pen + pencil + eraser);
          System.out.println("sum of stationary:"+sumation);
+        
+         // find the area of the triangle
+         int B= 10;
+         float h =20.8f;
+         float areaOfTriangle = (B*h)/2;
+         System.out.println("area of triangle: "+areaOfTriangle);
+        int sideA= 5;
+        int sideB =6;
+        int sideC= 8;
+        int parameterside=(sideA+sideB+sideC)/2;
+        double areaoftriangle =Math.sqrt(parameterside*(parameterside - sideA)*( parameterside - side)*(parameterside - sideC));
+        System.out.println("area of anothe triangle"+areaoftriangle);
 
+        // this is the root of the quadratic equation:
+        int a1, b1,c1;
+        a1=1;
+        b1=-4;
+        c1=4;
+        double r1,r2;
 
+        r1 =((-b1)+Math.sqrt((b1*b1)-4*a1*c1))/(2*a1);
+        r2=((-b1)-Math.sqrt((b1*b1)-4*a1*c1))/(2*a1);
+        System.out.println("the root of quadratic equation is: "+r1+" "+r2);
+
+        // printing the cuboid
+        int length=2;
+        int breadth =3;
+        int height =4;
+        int areaOfRectangle =length*breadth;
+        System.out.println("area of rectangle: "+ areaOfRectangle);
+        int parameterOfrectangle =2*(length*breadth);
+        System.out.println("parameter of rectangle: "+ parameterOfrectangle);
+        int volumeOfCuboid =length*breadth*height;
+        System.out.println("volume of cuboid: "+ volumeOfCuboid);
+
+        
 
     }
 }
