@@ -9,16 +9,15 @@ public class Bitwise_operator {
         System.out.println("y left shift of y: "+b);
         int c = x>>1;
         System.out.println("x right shift by: "+c);
+        System.out.println(String.format("%s",Integer.toBinaryString(c)));
         int d = y>>1;
         System.out.println("y right shift y :"+d);
+        System.out.println(String.format("%s",Integer.toBinaryString(d)));
         int z = x&y;
         System.out.println("x and y is:"+z);
         int r=x|y;
         System.out.println("x or y is:"+r);
         int s=x^y;
         System.out.println("x not y is"+s);
-       
-       
-        
     }
 }
