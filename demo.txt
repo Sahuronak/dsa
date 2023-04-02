@@ -1,0 +1,6 @@
+#laptop
+#Wed Mar 01 13:59:54 IST 2023
+brand\:\ =hp
+generation\:\ =11
+os\:\ =window 11
+processor\:\ =i3

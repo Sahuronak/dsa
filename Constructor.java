@@ -24,7 +24,6 @@ public class Constructor {
         int  roll;
         String password;
         int marks[];
-        
         // shallow copy constructor
         // Student(Student s1){
         //     marks= new int[3];
@@ -43,7 +42,7 @@ public class Constructor {
             }
         }
 
-        // non paramatrized
+        // non parametrized
         Student() {
             marks= new int[3];
             System.out.println("sakshi"); 

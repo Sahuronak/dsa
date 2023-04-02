@@ -37,9 +37,33 @@ public class Oops {
     
     Thar t = new Thar();
     t.fuel();
+    
+    //abstraction :
+    Horse h= new Horse();
+    h.khana();
+    h.sound();
+    System.out.println(h.color);
+    //hierarchy---animal_abstract-->horse-->horse ka child 
+        Horse_ka_child myhorse = new Horse_ka_child();
+    Lion l =new Lion();
+    l.khana();
+    l.sound();
 
+    //interface:
+    Queen q = new Queen();
+    q.moves();
+    //static keyword
+    Student s1 = new Student();
+    s1.schoolName="GYANODAYA";
 
+    Student s2 = new Student();
+    System.out.println(s2.schoolName);
+
+    Student s3 = new Student();
+    s3.schoolName="convent";
      }
+
+     
 }
 //object
 class pen{
@@ -153,6 +177,98 @@ class Thar extends Car{
 
 /* abstraction: Hiding all the unnecessary  details and showing only the important parts to the user.
 --->abstract classes  ---->interface
+>>>>cannot create an instance of abstract class
+>>>>can have abstract/non-abstract methods.
+>>>> can have constructors
 
 */
+abstract class Animal_abstract{
+    String color;
+    //constructor
+    Animal_abstract(){//class
+        //color="brown";
+        System.out.println("animal_abstract construct callled");
+    }
+    void khana(){
+
+        System.out.println("animals are eating");
+    }
+    abstract void sound();
+}
+class Horse extends Animal_abstract{
+    //constructor
+    Horse(){
+        System.out.println("Horse constructor called");
+    }
+    void changeColor(){
+        color = "dark black";
+    }
+    void sound(){
+        System.out.println(" sound is produce by horse");
+    }
+} 
+class Horse_ka_child extends Horse{
+    Horse_ka_child(){
+        System.out.println("horse ka child and constructor");
+    }
+}
+class  Lion extends Animal_abstract{
+    void  sound(){
+        System.out.println("sound is produce by lion ");
+    }
+}
+
+/*interface:interface is a blueprint of a class.
+ * blueprint(interface: feature of car like wheels ,speed,engine)>>>>blueprint(class: type of car suppose maruti800)>>>object:maruti800(car1,car2,car3....)
+ * Work of interfaces:
+ * all method are public abstract and without implementation.
+ * applying multiple inheritance
+ * to achieve total abstract class
+ * variables in the interface are final ,public and static.
+*/
+ interface ChessPlayer{
+    void moves();
+ }
+ class Queen implements ChessPlayer{
+    public void moves(){
+        System.out.println("up, down ,right, diagonal(in the all four direction)");
+    }
+ }
+ class  Rook implements ChessPlayer{
+    public void moves(){
+        System.out.println("Up, down, Left, Right");
+    }
+ } 
+ class King implements ChessPlayer{
+    public void moves(){
+        System.out.println("up, down, left, right, diagonal (by 1 step)");
+
+    }
+ }
+ //
+
+ /*static keyword: fstatic keyword in java is used to share the same variable or methods of a given class
+ ---properties 
+ ---function 
+ ---block
+ ---nested classes
+  */
+  class Student{
+    String name;
+    int roll;
+
+    static String schoolName;
+
+    void setName(String name){
+    this.name = name;
+    }
+    String getName(String name){
+    return this.name;
+    }
+  }
+  //super keyword:super keyword is us ed to refer immediate parent
+  //--access parents properties 
+  //to access parent function
+  // to access parents constructor.
+
 

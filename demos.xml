@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>laptop</comment>
+<entry key="processor: ">i3</entry>
+<entry key="brand: ">hp</entry>
+<entry key="generation: ">11</entry>
+<entry key="os: ">window 11</entry>
+</properties>
