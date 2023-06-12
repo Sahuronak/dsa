@@ -9,8 +9,7 @@ public class array {
             add = add + element;
         }
         System.out.println("the value of sum is:  "+ add);
-
-        // write a program to find out whether a given integers is present in an array or not .
+// write a program to find out whether a given integers is present in an array or not .
         int number[] = {56 ,76 ,88 ,65};
         float numb = 76;
         boolean isInArray = false;
@@ -27,8 +26,7 @@ public class array {
             System.out.println("the value is not present in the array");
         }
         
-
-        //operation:
+//operation:
          System.out.println("operation array");
         int mark[]={1, 2, 3, 4, 5};
         arrayOperation(mark);
@@ -38,27 +36,27 @@ public class array {
         }
         System.out.println();
 
-        //binary Search :with the time complexity O(log n)
+//binary Search :with the time complexity O(log n)
         System.out.println("binary search");
         int[] num1={3 ,6 ,9 ,12 ,15 ,18 ,21};
         System.out.println("index for key  is : "+binarySearch(num1, 12));
 
-          //print Pairs in an array
+ //print Pairs in an array
           System.out.println("print pair in an arrays");
           int num3[]={1,2,3,4,5,6,7};
           PrintPairs(num3);
 
-         //reverse number
+//reverse number
          System.out.println("reverse array");
          int num2[]= {4, 8 ,12 ,16 ,20 ,24 ,28};
          reverseArray(num2);
 
-         //printing subarray :kidanas algo
+//printing subarray :kidanas algo
         System.out.println("subarray by kindanas by time complexity: O(n)");
         int num4[]={9,8,7,6,5,4,3};
         kadanasSubarray(num4);
 
-        // create an array of 5 float and calculate their sum
+// create an array of 5 float and calculate their sum
 
         float [] marks = {56.9f ,76.5f ,87.6f ,65.7f};
         float sum = 0;
@@ -67,7 +65,7 @@ public class array {
         }
         System.out.println("the value of sum is:  "+ sum);
 
-         //3- calculate the array marks from an array containing  marks of all students in the physics using the for each loop
+//3- calculate the array marks from an array containing  marks of all students in the physics using the for each loop
          int [] point ={45,56,67,78,45};
          int sum1 = 0;
          for(int element:point){
@@ -75,7 +73,7 @@ public class array {
          } 
          System.out.println("the value of avg marks is: "+(sum1/point.length));
 
-        //linear search
+//linear search
         int mar[]={2,4,6,8,10,12,14,16};
         int key =14;
         int index=linearSearch(mar, key);
@@ -84,13 +82,13 @@ public class array {
         }else{
             System.out.println("the key is at index:"+index);
         }
-        //maximum and minimum printing
+ //maximum and minimum printing
         int num[] ={23,34,45,56};
         System.out.println(" the largest number is : "+largestNumber(num));
 
     }
 
-     // linear search
+// linear search
      public static int linearSearch(int mark[],int key){
         for(int i=0; i<=mark.length; i++)
          if(mark[i]==key){
@@ -99,7 +97,7 @@ public class array {
          return -1;
  
      }
-     //maximum and minimum value
+//maximum and minimum value
      public static int largestNumber(int num[]){
         int largest= Integer.MIN_VALUE;
         for(int i=0; i<=num.length; i++)
@@ -111,7 +109,8 @@ public class array {
         return largest;
 
      }
-     // binary search value
+     
+// binary search value
     public static int binarySearch(int number1[],int key1){
         int start=0; int end=number1.length-1;
         while(start<=end){
